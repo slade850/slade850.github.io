@@ -88,7 +88,7 @@ header /* mise en page du header en reverse pour avoir la photo coté droit sans
 aside /* liseré et info complémentaires */
 {
     /*flex: 1; /* pour garder les proportions de la page si ont l'enlève le liseré prend une plus grande partie de la page */
-    max-width: 200px;
+    max-width: 150px;
     border: 1px solid;
     border-radius: 10px;
     font-family: 'caviar_dreamsregular';
