@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('fonts/CaviarDreams-webfont.eot') format('eot'),
+         url('fonts/CaviarDreams-webfont.woff') format('woff'),
+         url('fonts/CaviarDreams-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body /* image deco de fond */
+{  
+	background: url("fond.jpg") repeat-x;
+    max-width: 1300px;
+    margin: auto;
+}
+#tete /* bordure et ombre sur la photo de cv */
+{
+     border: 3px double;
+     box-shadow: 6px 6px 6px;
+     color: #5626D1;
+}
+#tete:hover /* effet dynamique en modifiant la bordure et l'ombre de la photo au survol */
+{
+	border: 3px solid;
+    box-shadow: 3px 3px 3px;
+    color: #5626D1;
+}
+h1 /* Titre principal */
+{
+    font-size: 2.6em;
+	text-align: center;
+	font-family: 'caviar_dreamsregular';
+	color: #5626D1;
+	text-shadow: 6px 6px 10px black;
+}
+h1 + p /* cible la petite phrase sous le titre */
+{
+	text-align: center;
+}
+h2, h3 /* les titres secondaire et le sous titre autre diplome */
+{
+	font-family: 'caviar_dreamsregular';
+	color: #5626D1;
+}
+header /* mise en page du header en reverse pour avoir la photo coté droit sans inverser dans html*/
+{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+#titre /* titre et phrase qui l'accompagne en colonne pour etre bien aligné l'une en dessous de l'autre */
+{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#contenu /*conteneur pour "experience" "competences" et "formation" sans parametre flex-direction vue que j'utilise la direction par defaut*/ 
+{
+    display: flex;
+    justify-content: space-between;
+}
+#experience
+{
+    /*flex: 1; /* j'aurai put mettre a la place un width en % mais l'avantage du flex est qu'il adapte automatiquement le contenu flexbox */
+    width: 30%;
+    text-align: left; /* alignement agauche pour la présentation */
+    padding: 5px;
+}
+#competences
+{
+     /*flex: 1; /* idem que pour le flex "experience" et surtout pour que la taille du block soit identique */ 
+     width: 30%;
+     text-align: left; /* alignement agauche pour la présentation */
+     padding: 5px;
+}
+#formation
+{
+     /*flex: 1; /* idem encore */
+     width: 30%;
+     text-align: left; /* alignement agauche pour la présentation */
+     padding: 5px;
+}
+#global /* organisation global reverse pour avoir le "corp" a droite et le aside qui sert de liseret à gauche */
+{
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+aside /* liseré et info complémentaires */
+{
+    /*flex: 1; /* pour garder les proportions de la page si ont l'enlève le liseré prend une plus grande partie de la page */
+    max-width: 200px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-family: 'caviar_dreamsregular';
+    color: white;
+    background-color: #4C4C4D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    
+}
+#info /* centrage, police et coleur du paragraphe contenu dans aside */
+{
+    font-family: 'caviar_dreamsregular';
+    text-align: center;
+    color: #CB3BFF;
+}
+#loisir /* centrage du titre dans aside */
+{
+    text-align: center;
+}
+#contact
+{
+	display: flex;
+	text-align: center;
+    justify-content: space-around;
+}
+#contact figure:hover
+{
+     box-shadow: -3px -3px 3px inset grey;
+}
+@media all and (max-width: 1024px) /* permet de tester le changement de design de la page en reduisant la fenetre ou sur petit ecran */
+{
+#contenu /* reorganisation du contenue en colonne */
+{
+    display: flex;
+    flex-direction: column;
+}
+aside /* je n'ai pas utilisé un display:none; sur mon aside car il contien la partie loisir */
+{ /* pour faire disparaître mon liseré j'ai enlevé la bordure remis la police en noire et mettre le fond transparent */
+    border: none;
+    color: black;
+    background-color: transparent;
+}
+#global /* reorganisation global */
+{
+   display: flex;
+   flex-direction: column;
+}
+#contact
+{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+}
+@media all and (max-device-width: 480px) /* paramètre identique à la fenetre reduite je l'ai ajouté pour etre sur de la compatibilité avec les differents navigateurs de smartphone */
+{
+#contenu
+{
+    display: flex;
+    flex-direction: column;
+}
+aside
+{
+    border: none;
+    color: black;
+    background-color: transparent;
+}
+#global
+{
+   display: flex;
+   flex-direction: column;
+}
+#contact
+{
+	flex-wrap: wrap;
+	justify-content: center;
+}
+}

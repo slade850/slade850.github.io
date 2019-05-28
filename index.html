@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" /> <!-- pour ne pas avoir a zoomer sur petit ecran -->
+    <link rel="stylesheet" href="style.css" />
+ 	<title>CV Julien</title>
+ </head>
+<!-- les div dans le code  sont la pour faciliter l'organisation des block pour l'utilistion de flexbox -->
+ <body> 
+ 	<div id="global"> <!-- comme sont nom l'indique sert de conteneur global de la pge -->
+ 	  <div id="corp"> <!-- conteneur pour les block header et div "contenu" -->
+ 	   <header> <!-- le header contien le titre et la photo -->
+ 	    <p><a href="Jul.jpg" target="_blank"><img src="thumbnails/minJul.jpg" alt="Photo de Julien" title="Cliquez pour agrandir" id="tete" /></a></p>
+ 	    <div id="titre">
+ 		 <h1>Bardin Julien</h1>
+ 	     <p>En phase de reconversion professionnelle</p>
+ 	    </div>
+ 	   </header>
+
+ 	    <div id="contenu"> <!-- conteneur pour les block "experience" "competence" et "formation" -->
+ 	     <section id="experience">
+ 	      <h2>Mon Expérience</h2>
+ 	      <ul>
+ 		  <li><strong>de Juillet 2010 à Septembre 2018 - Classe Affaires</strong><br />Chauffeur transport de personnes, suivi et gestion des chauffeurs, maintenance informatique et facturation clients. </li>
+ 		  <li><strong>de Septembre 2004 à Aout 2008 - Kart'in Paris Sud</strong><br /> Commissaire de Piste. Chef d'équipe depuis fin 2006 , 5 collaborateurs: formation et suivi de l’équipe, Veiller au bon fonctionnement des équipements, expliquer la manipulation des karts et conseiller la clientèle, assurer la sécurité et le respect des règles sur la piste.</li>
+ 		  <li><strong>de Novembre 2003 à Mars 2004 - La Poste Orly cpa</strong><br /> agent acc13, tri de colis internationaux.</li>
+ 		  <li><strong>de Mai à juillet 2003 - QUICK</strong><br />
+ 		  Equipier caisse et grille en restauration rapide.</li>	
+ 		  <li><strong>Aout 2000 2001 et 2002 - DIGIPLUG</strong><br />
+ 		  Assistant Web master, mise à jour de la base de donnée (site Internet).</li>
+ 		  <li><strong>Juillet Aout 1998 - PEP</strong><br />
+ 		  Aide cuisinier en centre de vacances. </li>
+ 	      </ul>
+         </section>
+         <section id="competences">
+ 	      <h2>Mes Compétences</h2>
+ 		  <ul>
+ 			<li><strong>Mécanique</strong>: Base de mécanique kart, auto et moto</li>
+            <li><strong>Informatique et Réseaux</strong>: Installation et configuration Windows et Linux, création web 
+              en html5/css, base de programmation C, C++, java et binaire(automatisme). 
+            	Utilisation des logiciels de bureautique les plus courants (Word, Excel…), logiciels de types DAO (Solidworks...) ,CFAO (Mastercam...) et PAO (Photoshop...). Maintenance informatique (Démontage, assemblage…). Installation réseaux câblé et sans fil (Nas, imprimante ect..).</li>
+            <li><strong>Électronique</strong>: Base d'électronique général, montage divers et soudure.</li>
+            <li><strong>Modélisme</strong>: Fabrication, montage et paramétrage.</li>
+          </ul>
+         </section>
+         <section id="formation">
+          <h2>Ma Formation</h2>
+            <ul><li><strong>2002 - Bac STI micro technique</strong></li></ul>
+          <h3>Autre Diplomes</h3>
+           <ul>
+        	   <li>Brevet d'initiation aéronautique</li>
+        		 <li>CAT 1 et 2</li>     		
+        		 <li>Brevet militaire de parachutiste</li>
+        		 <li>EPI (équipier de première intervention)</li>
+        		 <li>GE (gestion d'évacuation)</li>
+        		 <li>PSC1</li>                                                
+             <li>Brevet Européen des premiers secours</li>
+        		 <li>Carte Professionnelle de VTC</li>
+           </ul>
+          <h3>Certificat Openclassroom</h3>
+            <ul>
+              <li>Apprenez à apprendre</li>
+              <li>Comprendre le Web</li>
+              <li>Découvrez le fonctionnement des algorithmes</li>
+              <li>Reprenez le contrôle à l'aide de Linux !</li>
+              <li>Apprenez à créer votre site web avec HTML5 et CSS3</li>
+         </section>
+        </div> <!-- contenu -->
+        <div id="contact">
+          <p><a href="mailto:julien.bardin@live.fr"><figure><img src="thumbnails/Mail.png" alt="icon Mail" title="Mail" /><figcaption>Contact</a></figcaption></figure></a>
+            <p><a href="https://www.linkedin.com/in/julien-bardin-a9438917b/"><figure><img src="thumbnails/linkedin.png" alt="icon Linkedin" title="Linkedin" /><figcaption>Profil Linkedin</figcaption></figure></a></p>
+            <p><a href="https://www.sololearn.com/Profile/13016026"><figure><img src="thumbnails/Sololearn.png" alt="icon Sololearn" title="Sololearn" /><figcaption>Profil Sololearn</figcaption></figure></a></p>
+            <p><a href="https://www.codecademy.com/fr/slade850"><figure><img src="thumbnails/Codecademy.png" alt="icon Codecademy" title="Codecademy" /><figcaption>Profil Codecademy</figcaption></figure></a></p>
+        </div>
+       </div> <!-- corp -->
+       <aside> <!-- liseré et info complementaires -->
+       <h2 id="info">Loisirs</h2>
+       <p id="loisir">cinéma, musique, jeux vidéo, course à pieds, VTT, musculation, sports mécaniques, aéronautique, et aéromodélisme hélicoptère, avion, fpv.</p>
+       </aside>
+    </div>  <!-- global -->  		
+</body>
+</html>
