@@ -122,6 +122,18 @@ aside /* liseré et info complémentaires */
 }
 @media all and (max-width: 1024px) /* permet de tester le changement de design de la page en reduisant la fenetre ou sur petit ecran */
 {
+    #experience
+    {
+        width: 100%;
+    }
+    #competences
+    {
+        width: 100%;
+    }
+    #formation
+    {
+         width: 100%;
+    }    
 #contenu /* reorganisation du contenue en colonne */
 {
     display: flex;
@@ -132,6 +144,8 @@ aside /* je n'ai pas utilisé un display:none; sur mon aside car il contien la p
     border: none;
     color: black;
     background-color: transparent;
+    max-width: none;
+    width: 100%;
 }
 #global /* reorganisation global */
 {
@@ -146,6 +160,18 @@ aside /* je n'ai pas utilisé un display:none; sur mon aside car il contien la p
 }
 @media all and (max-device-width: 480px) /* paramètre identique à la fenetre reduite je l'ai ajouté pour etre sur de la compatibilité avec les differents navigateurs de smartphone */
 {
+    #experience
+    {
+        width: 100%;
+    }
+    #competences
+    {
+        width: 100%;
+    }
+    #formation
+    {
+         width: 100%;
+    }       
 #contenu
 {
     display: flex;
@@ -156,6 +182,8 @@ aside
     border: none;
     color: black;
     background-color: transparent;
+    max-width: none;
+    width: 100%;
 }
 #global
 {
